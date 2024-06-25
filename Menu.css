@@ -150,9 +150,12 @@
     left: 0;
     width: 100%;
     background-color: #028962;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
+}
+#price {
+margin-right: 50px;
 }
 
 /* Style the text inside the navigation bar */
@@ -160,4 +163,48 @@
     margin: 0;
     font-size: 37px;
     text-align: right;
+}
+.cart-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the light blue circle */
+.outer-circle {
+    background-color: lightblue; /* Light blue background color */
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items evenly */
+    border-radius: 22px;
+}
+
+/* Style for the white circle around the quantity number */
+.white-circle {
+    background-color: white; /* White background color */
+    border-radius: 50%;
+    padding: 4px; /* Adjust padding as needed */
+    margin-left: 12px;
+}
+
+/* Shopping bag logo styles */
+.shopping-bag {
+    background-image: url('shopping-bag.png'); /* Replace 'shopping-bag.png' with your image path */
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-size: cover;
+    margin-left: 33px; /* Adjust margin as needed */
+}
+
+.price-circle {  /
+    background-color: white; /* White background color */
+    border-radius: 22px;
+    padding: 10px; /* Adjust padding as needed */
+    margin-left: 12px; 
+    background-color: lightblue; /* Light blue background color */
+    margin-right: 31px;
+
+
+
 }

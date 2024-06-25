@@ -107,3 +107,6 @@ function addToCart(itemName, price) {
    var bottomNav = document.querySelector(".bottom-navigation");
    bottomNav.style.display = "block";
 }
+function openNewPage(url) {
+    window.location.href = url; // Navigate to the specified URL
+}

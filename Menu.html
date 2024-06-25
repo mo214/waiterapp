@@ -42,8 +42,12 @@
 <h1 class="burgersheader">Burger</h1>
     <div class="image-grid" id="food">
         <!-- Image items -->
+       
         <div class="image-item">
-            <img src="burger1.png" alt="Image 1" onclick="handleImageClick('burger1')">
+            
+            <!-- Image with onclick event -->
+            <img src="burger1.png" alt="Image 1" onclick="openNewPage('food-details.html')">
+        
             <div class="item-name">Double Cheese Burger</div>
             <p>indholder pickles, tomat, aguark, oksekød blablad,</p>
             <div class="price-container">89 DKK</div>
@@ -179,18 +183,27 @@
     </div>
 </div>
 
-<!-- Your content goes here -->
 
 
-<!-- Bottom navigation bar -->
-<div class="bottom-navigation">
-   
-   <!-- Cart info -->
-   <div class="cart-info">
-    <span class="quantity">Antal: <span id="cartQuantity">0</span></span>
-    <span class="price">Total Price: DKK<span id="cartTotal">0.00</span></span>
+ <!-- Bottom navigation bar -->
+ <div class="bottom-navigation">
+    <!-- Cart info -->
+    <div class="cart-info">
+        <!-- Light blue circle -->
+        <div class="outer-circle">
+            <!-- White circle around the quantity number -->
+            <div class="white-circle">
+                <!-- Quantity number on the left -->
+                <span id="cartQuantity">0</span>
+            </div>
+            <!-- Shopping bag logo on the right -->
+            <div class="shopping-bag"></div>
+        </div>
+        <div class="price-circle">
+        <!-- Total Price -->
+        <span id="price"> DKK<span id="cartTotal">0.00</span></span>
+    </div>
 </div>
-</div>
-<!-- JavaScript to update cart quantity and total price -->
+
 </body>
 </html>
